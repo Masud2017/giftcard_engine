@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from typing import Optional
 
 class SellerInfo(BaseModel):
     first_name:str
@@ -6,3 +7,4 @@ class SellerInfo(BaseModel):
     bank_ibn:str
     card_number:str
     pin:str
+    status:Optional[str] = None

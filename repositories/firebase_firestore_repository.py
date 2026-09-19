@@ -1,5 +1,5 @@
-from ..configs.config import firestore_db
-from ..models.seller_info import SellerInfo
+from configs.config import firestore_db
+from models.seller_info import SellerInfo
 import traceback
 
 
