@@ -17,5 +17,5 @@ def submit_thuis_card_info(seller_information:SellerInfo) -> CardSubmissionInfo:
         print(seller_information.model_dump_json())
         return CardSubmissionInfo(status=200)
     except Exception as e:
-        import traceback; traceback.format_exc(e)
+        import traceback; print(traceback.format_exc())
         return CardSubmissionInfo(status=404)

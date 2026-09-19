@@ -11,6 +11,10 @@ def add_thuis_card_info(seller_info:SellerInfo):
                 "first_name": seller_info.first_name,
                 "second_name": seller_info.second_name,
                 "ibn": seller_info.bank_ibn,
+                "status":seller_info.status
                 })
+        
+        # firestore_db.collection("thuis_card_collection").add(seller_info.model_dump_json())
+        
     except Exception as e:
-        traceback.format_exc(e)
+        print(traceback.format_exc())
