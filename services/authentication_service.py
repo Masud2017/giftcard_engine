@@ -1,3 +1,5 @@
+from warnings import deprecated
+
 from models.model_for_authentication import Token
 from firebase_admin import auth
 from firebase_admin.auth import ExpiredIdTokenError,InvalidIdTokenError
@@ -12,6 +14,10 @@ class AuthenticationService:
         pass
     
     
+    """
+    abcdefghijklmnopqrstuvwxyz
+    """
+    @deprecated("No longer in use")
     @staticmethod
     def authenticate(self,access_token) -> Token:
         try:
